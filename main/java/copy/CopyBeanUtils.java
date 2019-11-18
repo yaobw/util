@@ -11,11 +11,9 @@ import java.util.List;
  * @since V1.0
  *
  */
-public class CopyBeanUtils {
+public class CopyBeanUtils <T, K> {
 
-    public void copy(){
-        Object source = new Object();
-        Object target = new Object();
+    public void copy(T source, K target){
         BeanCopyUtils.copyBean(source, target);
     }
 
