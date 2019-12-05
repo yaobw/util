@@ -21,4 +21,5 @@ public class CopyBeanUtils <T, K> {
         List<People> list = Lists.newArrayList();
         List<Student> studentList = BeanCopyUtils.copyList(list, Student.class);
     }
+
 }
