@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.easy;
 
 /**
  * @description: merge two ordered arrays into one bigger array and order it

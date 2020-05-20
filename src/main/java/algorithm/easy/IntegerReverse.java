@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.easy;
 
 import org.apache.commons.lang3.StringUtils;
 
