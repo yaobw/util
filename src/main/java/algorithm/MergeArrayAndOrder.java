@@ -1,7 +1,7 @@
 package algorithm;
 
 /**
- * @description:
+ * @description: merge two ordered arrays into one bigger array and order it
  * @author: yaobw
  * @date: 2020/5/19 4:49 下午
  */
