@@ -13,4 +13,12 @@ public class Student {
     private String name;
 
     private Integer age;
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

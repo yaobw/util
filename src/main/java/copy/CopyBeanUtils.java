@@ -13,13 +13,22 @@ import java.util.List;
  */
 public class CopyBeanUtils <T, K> {
 
-    public void copy(T source, K target){
-        BeanCopyUtils.copyBean(source, target);
+    public static <T, K> K copy(T source, K target){
+        return BeanCopyUtils.copyBean(source, target, target.getClass());
     }
 
-    public void copyList(){
-        List<People> list = Lists.newArrayList();
-        List<Student> studentList = BeanCopyUtils.copyList(list, Student.class);
+    public static <T, K> List<K> copyList(List<T> sourceList, Class<K> targetClazz){
+        return BeanCopyUtils.copyList(sourceList, targetClazz);
+    }
+
+
+    public static void main(String[] args) {
+        List list = Lists.newArrayList();
+        People people = new People();
+        people.setAge(1);
+        people.setName("123");
+        list.add(people);
+        System.out.println(copyList(list, new Student().getClass()).toString());
     }
 
 }
