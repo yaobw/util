@@ -3,7 +3,7 @@ package algorithm.structure;
 import java.util.Arrays;
 
 /**
- * @description: the BinaryHeap is a complete tree . Also the value of node in binaryHeap always bigger than other children.
+ * @description: the BinaryHeap is a complete binary tree . Also the value of node in binaryHeap always bigger than other children.
  * @author: yaobw
  * @date: 2020/8/10 7:31 下午
  */
